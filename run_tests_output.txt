@@ -1,0 +1,33 @@
+----------------------------------------------------------------------
+RUNNING TEST:
+  sh count-fasta-seqs.sh gekko-mindorensis.fasta
+PASSED!
+Passed 1 out of 1 tests
+----------------------------------------------------------------------
+
+
+----------------------------------------------------------------------
+RUNNING TEST:
+  sh count-fasta-seqs.sh cyrtodactylus-philippinicus.fasta gekko-mindorensis.fasta insulasaurus-arborens.fasta
+PASSED!
+Passed 1 out of 1 tests
+----------------------------------------------------------------------
+
+
+----------------------------------------------------------------------
+RUNNING TEST:
+  sh count-fasta-seqs.sh /Users/Britt/Desktop/Scripting_For_Biologists/au-bootcamp-git-intro/tests/test_nested_singleton/input/gekko-mindorensis.fasta
+PASSED!
+Passed 1 out of 1 tests
+----------------------------------------------------------------------
+
+
+----------------------------------------------------------------------
+RUNNING TEST:
+  sh count-fasta-seqs.sh /Users/Britt/Desktop/Scripting_For_Biologists/au-bootcamp-git-intro/tests/test_nested_files/input/*
+PASSED!
+Passed 1 out of 1 tests
+----------------------------------------------------------------------
+
+
+All tests passed!
