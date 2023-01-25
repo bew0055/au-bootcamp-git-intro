@@ -101,7 +101,7 @@ do
 
 FILENAME=`basename $filepath`
 
-SEQUENCECOUNT=`grep -c ">" $FILENAME`
+SEQUENCECOUNT=`grep -c ">" $filepath`
 
 echo $SEQUENCECOUNT $FILENAME
 
