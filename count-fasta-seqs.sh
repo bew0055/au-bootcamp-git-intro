@@ -94,3 +94,19 @@ echo "$@"
 #
 # ADD YOUR CODE BELOW:
 
+for filepath in "$@"
+do
+
+FILENAME=`basename $filepath`
+
+grep ">" $FILENAME >> sequences.txt
+
+echo `grep ">" $FILENAME | wc -l` $FILENAME
+
+done
+
+wc -l < sequences.txt
+
+##the way this is set up will give the correct sequence count. Do make sure that if the script is run again that the intermediate file "sequences.txt" is removed so the same sequences are not reappended to the same file
+
+#I am sure there is also a better way to go about summing the sequence totals across fasta files, but this was the solution that came to mind for me.
