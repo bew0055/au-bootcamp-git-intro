@@ -63,7 +63,7 @@
 # files that were 'given to' this script. The variable "$@" will be very useful
 # for this. Let's take a look at what it gives us:
 
-echo "$@"
+#echo "$@"
 
 # How are you going to work with each file path?
 # HINT: for loop (remember "for do done"?)
@@ -94,19 +94,20 @@ echo "$@"
 #
 # ADD YOUR CODE BELOW:
 
+sum=0
+
 for filepath in "$@"
 do
 
 FILENAME=`basename $filepath`
 
-grep ">" $FILENAME >> sequences.txt
+SEQUENCECOUNT=`grep -c ">" $FILENAME`
 
-echo `grep ">" $FILENAME | wc -l` $FILENAME
+echo $SEQUENCECOUNT $FILENAME
+
+sum=`expr $sum + $SEQUENCECOUNT`
 
 done
 
-wc -l < sequences.txt
+echo $sum
 
-##the way this is set up will give the correct sequence count. Do make sure that if the script is run again that the intermediate file "sequences.txt" is removed so the same sequences are not reappended to the same file
-
-#I am sure there is also a better way to go about summing the sequence totals across fasta files, but this was the solution that came to mind for me.
