@@ -65,7 +65,7 @@
 
 #echo "$@"
 
-# How are you going to work with each file path?
+x# How are you going to work with each file path?
 # HINT: for loop (remember "for do done"?)
 #
 # To get the name of each file from the path, checkout the command 'basename':
@@ -112,3 +112,5 @@ done
 echo $sum
 
 #great job! go ahead and reply below that you received this comment to practice pushing/pulling in the repository!
+
+## I recieved this comment and am going to push it back!

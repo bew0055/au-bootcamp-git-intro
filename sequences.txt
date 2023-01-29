@@ -1,5 +1,0 @@
->RMB3263_Cyrtodactylus_philippinicus_Negros
->CWL052_Cyrtodactylus_philippinicus_Negros
->RMB7155_Sphenomorphus_arborens_Negros
->RMB7156_Sphenomorphus_arborens_Negros
->RMB7163_Sphenomorphus_arborens_Negros
